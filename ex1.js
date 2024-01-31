@@ -6,11 +6,10 @@ app.get("/", (req, res) => {
   res.status(200);
   //   res.send("Hello World you are served by express!");
   res.json({
-    massage: "Welcome to the world of the API users",
+    id: "AZ112",
+    name: "Sal",
+    age: 25,
   });
-
-  const users = require("./routes/users");
-  app.use("/users", users); /**use this road : /users */
 });
 
 app.listen(port, () => {
